@@ -1,11 +1,11 @@
-function createGrid () {
-    const grid = document.getElementById('container')
-    const row = document.createElement('row')
+//Getting grid ID from index.html
+let grid = document.querySelector('grid');
 
-    grid.appendChild(row)
+grid.style.gridTemplateColumns = 'repeat(16, 1fr)';
+grid.style.gridTemplateRows = 'repeat(16, 1fr)';
 
-    for (let i = 0; i < 17; i++){
-        
-    }
-    const square = document.createElement('square')
+for(let i = 0; i < 256; i++) {
+    let square = document.createElement("div");
+    square.style.backgroundColor = "blue";
+    grid.insertAdjacentElement("beforeend", square);
 }

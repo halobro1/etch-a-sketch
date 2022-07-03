@@ -13,9 +13,11 @@
             <div class="content">
                 <div class="board"></div>
             </div>
-            <input type="text" placeholder="size of board" value="16">
-            <div class="buttons"> 
+            <div class="button"> 
                 <button>Reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)">
                 <button>Set Size</button>
             </div>
         </div>
